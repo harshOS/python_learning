@@ -32,7 +32,7 @@
 # print(eggs.keys())
 # print(eggs.values())
 
-picnicItems = {'apples': 5, 'cups': 2} #dict.get() method
-print('I am bringing ' + str(picnicItems.get('cups', 0)) + ' cups.') #get(keyvalue ,return value when key not available)
-
-print('I am bringing ' + str(picnicItems.get('eggs', "zero")) + ' eggs.')
+# picnicItems = {'apples': 5, 'cups': 2} #dict.get() method
+# print('I am bringing ' + str(picnicItems.get('cups', 0)) + ' cups.') #get(keyvalue ,return value when key not available)
+#
+# print('I am bringing ' + str(picnicItems.get('eggs', "zero")) + ' eggs.')
