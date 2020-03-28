@@ -36,3 +36,21 @@
 # print('I am bringing ' + str(picnicItems.get('cups', 0)) + ' cups.') #get(keyvalue ,return value when key not available)
 #
 # print('I am bringing ' + str(picnicItems.get('eggs', "zero")) + ' eggs.')
+
+# message = 'It was a bright cold day in April, and the clocks were striking thirteen.'
+# count = {}
+# for character in message:
+#     count.setdefault(character, 0)
+#     count[character] = count[character] + 1
+# print(count)
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.setdefault("brand")
+car['brand'] = "audi"
+
+print(x)
