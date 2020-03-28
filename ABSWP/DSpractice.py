@@ -21,9 +21,18 @@
 #
 # print(spam,scam)
 
-spam = ['cats', 'dogs', 'moose']
-bacon = ['dogs', 'moose', 'cats']
-print(spam == bacon)
-eggs = {'name': 'Zophie', 'species': 'cat', 'age': '8'}
-ham = {'species': 'cat', 'age': '8', 'name': 'Zophie'}
-print(eggs == ham)
+# spam = ['cats', 'dogs', 'moose']
+# bacon = ['dogs', 'moose', 'cats']
+# print(spam == bacon)
+# eggs = {'name': 'Zophie', 'species': 'cat', 'age': '8'}
+# ham = {'species': 'cat', 'age': '8', 'name': 'Zophie'}
+# print(eggs == ham)
+#
+# print(eggs.items())
+# print(eggs.keys())
+# print(eggs.values())
+
+picnicItems = {'apples': 5, 'cups': 2} #dict.get() method
+print('I am bringing ' + str(picnicItems.get('cups', 0)) + ' cups.') #get(keyvalue ,return value when key not available)
+
+print('I am bringing ' + str(picnicItems.get('eggs', "zero")) + ' eggs.')
