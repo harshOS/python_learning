@@ -44,13 +44,20 @@
 #     count[character] = count[character] + 1
 # print(count)
 
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
-
-x = car.setdefault("brand")
-car['brand'] = "audi"
-
-print(x)
+# car = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+#
+# x = car.setdefault("brand")
+# car['brand'] = "audi"
+#
+# print(x)
+import pprint #cleaner printing
+message = 'It was a bright cold day in April, and the clocks were striking thirteen.'
+count = {}
+for character in message:
+    count.setdefault(character, 0)
+    count[character] = count[character] + 1
+pprint.pprint(count)
