@@ -6,6 +6,12 @@ def isPhonenumberIN(num):
     if not num[3:13].isdecimal():
         return False
     return True
+message = "On my wall i found some writen number +918108855425 and 913215854512"
+for i in range(len(message)):
+    part = message[i:i+13]
+    if isPhonenumberIN(part):
+        print("Phonenumber found: " +part )
+print("Done")
 
 print(isPhonenumberIN("+918108855425"))
 print(isPhonenumberIN("+91ahaahahahah"))
