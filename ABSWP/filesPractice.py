@@ -52,4 +52,40 @@ print(os.getcwd())
 # >>> content = r.read()
 # >>> content
 # 'Practice codes from book "Automate the Boring Stuff with Python, 2nd Edition\nPractical Programming for Total Beginners\nby Al Sweigart"'
-
+# >>> o = open('test.txt')
+# >>> o.readlines()
+# ['Test line 1\n', 'Test Line 2\n']
+# >>> o = open('test','w')
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# PermissionError: [Errno 13] Permission denied: 'test'
+# >>> o = open('test.txt','w')
+# >>> o
+# <_io.TextIOWrapper name='test.txt' mode='w' encoding='cp1252'>
+# >>> o.write('Line 3 Inserted')
+# 15
+# >>> o.readlines()
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# io.UnsupportedOperation: not readable
+# >>> o.close()
+# >>> o = open('test.txt','r')
+# >>> o.readlines()
+# ['Line 3 Inserted']
+# >>> o.close()
+# >>> o = open('test.txt','a')
+# >>> o.write('Appended')
+# 8
+# >>> o.readlines()
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# io.UnsupportedOperation: not readable
+# >>> o.close()
+# >>> o = open('text.txt','r')
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# FileNotFoundError: [Errno 2] No such file or directory: 'text.txt'
+# >>> o = open('test.txt','r')
+# >>> o.readlines()
+# ['Line 3 InsertedAppended']
+# >>>
