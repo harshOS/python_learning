@@ -45,3 +45,11 @@ print(os.getcwd())
 # False
 # >>> os.path.isdir('test')
 # True
+
+# >>> r = open('README.md')
+# >>> r
+# <_io.TextIOWrapper name='README.md' mode='r' encoding='cp1252'>
+# >>> content = r.read()
+# >>> content
+# 'Practice codes from book "Automate the Boring Stuff with Python, 2nd Edition\nPractical Programming for Total Beginners\nby Al Sweigart"'
+
