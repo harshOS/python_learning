@@ -1,10 +1,10 @@
-import os
-myFiles = ['accounts.txt', 'details.csv', 'invite.docx']
-
-for filename in myFiles:
-    print(os.path.join('C:\\Users\\asweigart', filename))
-
-print(os.getcwd())
+# import os
+# myFiles = ['accounts.txt', 'details.csv', 'invite.docx']
+#
+# for filename in myFiles:
+#     print(os.path.join('C:\\Users\\asweigart', filename))
+#
+# print(os.getcwd())
 #os.chdir() #chage working directory
 #os.mkdir() #make new directory
 # print(os.path.abspath('.')) #getting absolute path
@@ -89,3 +89,11 @@ print(os.getcwd())
 # >>> o.readlines()
 # ['Line 3 InsertedAppended']
 # >>>
+from datetime import date
+
+file = open("test.txt",'w')
+file.write('Name:\n\nDate:'+str(date.today())+'\n\nPeriod:')
+file.close()
+file = open("test.txt",'r')
+content = file.read()
+print(content)

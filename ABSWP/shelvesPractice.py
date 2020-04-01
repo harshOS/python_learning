@@ -9,9 +9,10 @@ print(file['cats'])
 print(type(file))
 print(list(file.keys()))
 print(list(file.items()))
-print(list(file.values()))
+print(list(file.values()))  n
 
 file.close()
+
 
 
 
