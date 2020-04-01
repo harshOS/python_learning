@@ -98,3 +98,5 @@ file.close()
 file = open("test.txt",'r')
 content = file.read()
 print(content)
+import os
+print(os.getcwd())
