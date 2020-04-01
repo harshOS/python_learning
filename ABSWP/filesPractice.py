@@ -93,6 +93,7 @@ from datetime import date
 
 file = open("test.txt",'w')
 file.write('Name:\n\nDate:'+str(date.today())+'\n\nPeriod:')
+file.write('\n\n'+' '* 20 + 'Set %s')
 file.close()
 file = open("test.txt",'r')
 content = file.read()
