@@ -1,0 +1,32 @@
+
+
+capitals = {'Andhra Pradesh':'Amravati or Hyderabad',
+'Arunachal Pradesh':'Itanagar',
+'Assam':'Dispur',
+'Bihar': 'Patna',
+'Chhatisgarh':'Naya Raipur',
+'Goa': 'Panaji',
+'Gujarat': 'Gandhi Nagar',
+'Haryana' : 'Chandigarh',
+'Himachal Pradesh' : 'Shimla (Summer)/ Dharamshala (Winter)',
+'Jharkhand' : 'Ranchi',
+'Karnataka' : 'Bengaluru',
+'Kerala': 'Thiruvananthapuram',
+'Madhya Pradesh' : 'Bhopal',
+'Maharashtra' : 'Mumbai',
+'Manipur': 'Imphal',
+'Meghalaya': 'Shillong',
+'Mizoram': 'Aizawal',
+'Nagaland': 'Kohima',
+'Odisha' : 'Bhubaneshwar',
+'Punjab': 'Chandigarh',
+'Rajasthan' : 'Jaipur',
+'Sikkim' : 'Gangtok',
+'Tamil Nadu': 'Chennai',
+'Telangana' : 'Hyderabad',
+'Tripura': 'Agartala',
+'Uttarakhand' : 'Gairsain (Summer)/Dehradun (Winter)',
+'Uttar Pradesh' : 'Lucknow',
+'West Bengal': 'Kolkata'}
+
+print(capitals["Karnataka"])
