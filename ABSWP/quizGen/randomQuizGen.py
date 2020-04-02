@@ -1,4 +1,4 @@
-
+from datetime import date
 
 capitals = {'Andhra Pradesh':'Amravati or Hyderabad',
 'Arunachal Pradesh':'Itanagar',
@@ -29,4 +29,14 @@ capitals = {'Andhra Pradesh':'Amravati or Hyderabad',
 'Uttar Pradesh' : 'Lucknow',
 'West Bengal': 'Kolkata'}
 
-print(capitals["Karnataka"])
+states = capitals.keys()
+
+for setNumber in range(5):
+    quizFile = open("QuizSet%s.txt"%(setNumber + 1),'w')
+    quizFile.write('Name:\n\nDate:' + str(date.today()) + '\n\nPeriod:')
+    quizFile.write('\n\n' + ' ' * 20 + 'Set %s'%(setNumber+1))
+    quizFile.close()
+
+    quizAnsFile = open("QuizAnswers%s.txt"%(setNumber + 1),'w')
+    quizAnsFile.write("Answer key for set %s"%(setNumber+1))
+    quizAnsFile.close()
