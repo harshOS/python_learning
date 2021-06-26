@@ -1,0 +1,35 @@
+##First-class functions
+
+##Functions can be assigned to variables
+##Functions can be passed in as input values to other functions
+##Functions can be return values from other functions
+##Functions can be the value in a dictionary or an element in a list
+
+def square(n):
+    return n*n
+def cube(n):
+    return n*n*n
+def raise_to_n(n,m):
+    return n**m
+def square_root(n):
+    return n **(1/2)
+def cube_root(n):
+    return n**(1/3)
+
+def get_function(func = 'square'):
+    if func == 'square':
+        return square
+    if func == 'cube':
+        return cube
+    if func == 'raise_to_n':
+        return raise_to_n
+    if func == 'square_root':
+        return square_root
+    if func == 'cube_root':
+        return cube_root
+##dict
+
+dict_function = { 'square' : square,
+                  'cube' : cube,
+                  'raise_to_n' : raise_to_n,
+                  'square_root' : square_root
